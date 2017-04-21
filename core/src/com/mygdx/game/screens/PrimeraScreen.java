@@ -155,31 +155,12 @@ public class PrimeraScreen implements Screen {
              vector = new Vector3 (Gdx.input.getX(), Gdx.input.getY(), 0);
             // stage.getCamera().unproject(vector);
 
-            if(vector.x >= container1.getRight()-55 && vector.x <= container1.getRight()+80 && vector.y >= container1.getTop()&& vector.y <= container1.getTop()+35){
+            if(vector.x >= container1.getRight()-20 && vector.x <= container1.getRight()+80 && vector.y >= container1.getTop()&& vector.y <= container1.getTop()+80){
                 Gdx.app.log ("coordenada Facil has clickado en" + Float.toString (Gdx.input.getX()), Float.toString(container1.getRight()));
-                //game.setScreen(new SegundaScreen(stage.getBatch(), stage.getViewport()));
-                dispose();
-            }
-            if(Gdx.input.getX()/2 >= container2.getRight()-25 && Gdx.input.getX()/2 <= container2.getRight()+23 && Gdx.input.getY() >= container2.getTop() &&Gdx.input.getY() <= container2.getTop()+30){
-                //Gdx.app.log ("En costruccion" + Float.toString (Gdx.input.getX()), Float.toString(container2.getRight()));
-                //game.setScreen(new GameScreen(stage.getBatch(), stage.getViewport()));
-                dispose();
-            }
-            if(Gdx.input.getX()/2 >= container3.getRight()-25 && Gdx.input.getX()/2 <= container3.getRight()+25 && Gdx.input.getY() >= container3.getTop() &&Gdx.input.getY() <= container3.getTop()+30){
-               // Gdx.app.log ("coordenada Facil has clickado en" + Float.toString (Gdx.input.getX()), Float.toString(container3.getRight()));
-                //game.setScreen(new GameScreen(stage.getBatch(), stage.getViewport()));
+                game.setScreen(new SegundaScreen(stage.getBatch(), stage.getViewport()));
                 dispose();
             }
 
-           /* Gdx.app.log ("facil dificil medio left", Double.toString(containerF.getPadLeft())+ " " +Double.toString(containerD.getPadLeft())+ " "+Double.toString(containerM.getPadLeft()));
-            Gdx.app.log ("facil dificil medio right", Double.toString(containerF.getRight()) + " " +Double.toString(containerD.getRight())+ " "+Double.toString(containerM.getRight()));
-            Gdx.app.log ("facil dificil medio top", Double.toString(containerF.getPadTop())+ " " +Double.toString(containerD.getPadTop())+ " "+Double.toString(containerM.getPadTop()));
-            Gdx.app.log ("facil dificil medio", Double.toString(containerF.getPadBottom())+ " " +Double.toString(containerD.getPadBottom())+ " "+Double.toString(containerM.getPadBottom()));
-            Gdx.app.log ("facil dificil medio PadX", Float.toString(containerF.getPadX())+ " " +Float.toString(containerD.getPadX())+ " "+Float.toString(containerM.getPadX()));
-            Gdx.app.log ("coordenada Facil", Float.toString(containerF.getTop()));
-*/
-/*
-            */
         }
 
 

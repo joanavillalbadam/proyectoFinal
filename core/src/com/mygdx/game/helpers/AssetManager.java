@@ -18,7 +18,7 @@ public class AssetManager {
     // Sprite Sheet
     public static Texture sheet;
 
-    public static Texture bullet;
+    public static Texture mapa;
 
     // Nau i fons
     public static TextureRegion spacecraft, spacecraftDown, spacecraftUp, background;
@@ -50,10 +50,10 @@ public class AssetManager {
         // Carreguem les textures i li apliquem el mètode d'escalat 'nearest'
         sheet = new Texture(Gdx.files.internal("fondos/fondo2.jpg"));
         sheet.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
-/*
-        bullet = new Texture(Gdx.files.internal("fonts/Bullet.png"));
-        bullet.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
-        */
+
+        mapa = new Texture(Gdx.files.internal("badlogic.jpg"));
+        mapa.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
+
         //sprites de el disparo
        // disparo = new TextureRegion(bullet, 125,253,715,250);
        // disparo.flip(false,true);
@@ -101,8 +101,10 @@ public class AssetManager {
         // Finalment creem l'animació
        // explosionAnim = new Animation(0.04f, explosion);
 
+
+
         // Fons de pantalla
-        background = new TextureRegion(sheet, 0, 0, width,height);
+        background = new TextureRegion(sheet);
         background.flip(false, true);
 
         /******************************* Sounds *************************************/
@@ -116,7 +118,7 @@ public class AssetManager {
 
         /******************************* Text *************************************/
         // Font space
-        FileHandle fontFile = Gdx.files.internal("fonts/space.fnt");
+        FileHandle fontFile = Gdx.files.internal("fonts/fuente1.fnt");
         font = new BitmapFont(fontFile, true);
         font.getData().setScale(1.4f);
     }
