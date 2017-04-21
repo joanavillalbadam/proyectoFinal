@@ -4,14 +4,16 @@ package com.mygdx.game.helpers;
  * Created by ALUMNEDAM on 18/04/2017.
  */
 
-        import com.badlogic.gdx.Gdx;
-        import com.badlogic.gdx.audio.Music;
-        import com.badlogic.gdx.audio.Sound;
-        import com.badlogic.gdx.files.FileHandle;
-        import com.badlogic.gdx.graphics.Texture;
-        import com.badlogic.gdx.graphics.g2d.Animation;
-        import com.badlogic.gdx.graphics.g2d.BitmapFont;
-        import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
+
 
 public class AssetManager {
 
@@ -19,6 +21,7 @@ public class AssetManager {
     public static Texture sheet;
 
     public static Texture mapa;
+    public static Texture mapa1;
 
     // Nau i fons
     public static TextureRegion spacecraft, spacecraftDown, spacecraftUp, background;
@@ -41,6 +44,9 @@ public class AssetManager {
     // Font
     public static BitmapFont font;
 
+    public static Image image;
+
+
     private static float m_fboScaler = 1.5f;
 
 
@@ -51,7 +57,7 @@ public class AssetManager {
         sheet = new Texture(Gdx.files.internal("fondos/fondo2.jpg"));
         sheet.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
 
-        mapa = new Texture(Gdx.files.internal("badlogic.jpg"));
+        mapa = new Texture(Gdx.files.internal("texturas/mapa1.png"));
         mapa.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
 
         //sprites de el disparo
