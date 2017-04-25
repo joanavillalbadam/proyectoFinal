@@ -14,7 +14,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	Texture img;
 	TiledMap tiledMap;
 	OrthographicCamera camera;
-	TiledMapRenderer tiledMapRenderer;
+	TiledMapRenderer tiledMapRenderer;//jjjj
 
 	@Override
 	public void create() {
